@@ -97,15 +97,45 @@ a.active, a:hover {
     color: #9499EA;
 }
 
+/* IMAGEM DESKTOP PADRÃO (SEU AJUSTE MANUAL) */
 .illustration {
     width: 456px;
     height: 562px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     left: -150px;
 }
 
+/* --- TELA DE NOTEBOOK (ATÉ 1366px) --- */
+@media (max-width: 1366px) {
+    .container-left {
+        padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 54px;
+        line-height: 64px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .container-right {
+        min-width: 320px;
+    }
+
+    .illustration {
+        width: 340px;
+        height: auto;
+        left: -100px; 
+    }
+}
+
+/* --- TELA DE CELULAR (ATÉ 768px) --- */
 @media (max-width: 768px) {
     .wrapper {
         flex-direction: column;
